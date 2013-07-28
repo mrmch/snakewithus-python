@@ -20,8 +20,8 @@ class Snake():
 
         self.me = self.get_me(my_id)
 
-        self.width = len(self.board)
-        self.height = len(self.board[0])
+        self.height = len(self.board)
+        self.width = len(self.board[0])
 
         self.name = snake_name
 
@@ -64,7 +64,7 @@ class Snake():
         else:
             x = x - 1
 
-        if x < 0 or y < 0 or x >= self.width or y >= self.height:
+        if x < 0 or y < 0 or x > self.width-1 or y > self.height-1:
             return True
         return False
 
