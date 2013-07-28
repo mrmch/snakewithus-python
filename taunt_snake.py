@@ -1,3 +1,5 @@
+import random
+
 from base_snake import Snake
 
 class TauntSnake(Snake):
