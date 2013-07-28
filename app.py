@@ -114,5 +114,7 @@ def end(snake_name):
     return _respond({})
 
 # Localhost
+
+print 'starting %s(%s) on %s' % (sn, snake_class, port)
 bottle.debug(True)
 bottle.run(host='0.0.0.0', port=port)
