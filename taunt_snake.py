@@ -35,7 +35,12 @@ class TauntSnake(Snake):
             'Hey %s, you smell bad!',
             '%s: your mother is a fox',
             "If I had a dollar for every time %s farted... I'd be rich!",
-            'Anybody want bbq snake? %s'
+            'Anybody want bbq snake? %s',
+            'What are you %s, a snake?',
+            '%s your snake is weak.',
+            '%s: brought to you by CrowdContent.com',
+            "I'm the best snake, %s is definitely the worst",
+            "Pssst %s, your epidermis is showing!"
         ]
 
         taunt = random.choice(taunts)
