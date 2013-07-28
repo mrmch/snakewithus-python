@@ -40,6 +40,13 @@ class HungrySnake(Snake):
             y = int(self.height/2)
 
         move = self.move_to(x, y)
+        last_move = self.me['last_move']
+
+        if (move == 'n' and last_move == 'w') or \
+            (move == 'w' and last_move == 'n') or \
+            (move == 's' and last_move == 'e') or \
+            (move == 'e' and last_move == 's'):
+            move = last_move
 
         return move
 
