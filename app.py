@@ -51,9 +51,11 @@ def register(snake_name):
     print "  Height:", request.get('board').get('height')
     print "----------------"
 
+    snake_class = snakes[sn]['cls']
+
     return _respond({
         'name': snake_name,
-        'head_img_url': "http://fc02.deviantart.net/fs70/f/2010/148/3/d/20x20_PNG_Icons_sword_by_JMcIvor.png"
+        'head_img_url': snake_class.head_img_url
     })
 
 

@@ -2,6 +2,7 @@ from base_snake import Snake
 
 class TauntSnake(Snake):
     name = 'TauntSnake'
+    head_img_url = 'http://i.imgur.com/ri2cUMx.png'
 
     def new_wall_direction(self, last_move):
         square = {

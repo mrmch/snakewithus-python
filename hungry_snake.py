@@ -4,6 +4,7 @@ from base_snake import Snake
 
 class HungrySnake(Snake):
     name = 'HunnnnnnnngrySnake'
+    head_img_url = 'http://i.imgur.com/AJPTBN3.png'
 
     def find_food(self):
         food = []
