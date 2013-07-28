@@ -20,7 +20,7 @@ def main():
         server = argv[2]
 
     if len(argv) < 4:
-        client = 'http://localhost:8001/sq'
+        client = 'http://localhost:8001'
     else:
         client = argv[3]
 
