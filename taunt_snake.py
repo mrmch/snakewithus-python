@@ -45,6 +45,7 @@ class TauntSnake(Snake):
 
         taunt = ''
         if random.randint(0, 10) == 0:
-            taunt = random.choice(taunts)
+            taunt = random.choice(taunts) % snake_name
 
-        return taunt % snake_name
+        return taunt
+
