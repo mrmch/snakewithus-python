@@ -81,7 +81,7 @@ class Snake():
         return x,y
 
     def bad_move(self, move):
-        new_x, new_y = self.compute_move(move)
+        x, y = self.compute_move(move)
 
         for pos in self.me['queue']:
             if x == pos[0] and y == pos[1]:
