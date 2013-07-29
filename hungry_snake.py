@@ -8,8 +8,8 @@ class HungrySnake(Snake):
 
     def find_food(self):
         food = []
-        for x in range(0, self.width-1):
-            for y in range(0, self.height-1):
+        for x in range(0, self.width):
+            for y in range(0, self.height):
                 for box in self.board[y][x]:
                     if box['type'] == 'food':
                         food.append((x,y))
