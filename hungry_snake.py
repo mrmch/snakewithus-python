@@ -48,7 +48,7 @@ class HungrySnake(Snake):
             move = 'w'
         elif (move == 'w' and last_move == 'e') or \
             (move == 'e' and last_move == 'w'):
-            move = 'w'
+            move = 'n'
 
         if self.bad_move(move):
             move = 's'
