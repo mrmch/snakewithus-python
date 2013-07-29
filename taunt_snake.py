@@ -6,19 +6,9 @@ class TauntSnake(Snake):
     name = 'TauntSnake'
     head_img_url = 'http://i.imgur.com/ri2cUMx.png'
 
-    def new_wall_direction(self, last_move):
-        square = {
-            'n': 'e',
-            'e': 's',
-            's': 'w',
-            'w': 'n'
-        }
-
-        return square[last_move]
-
     def get_move(self):
         if self.on_edge():
-            last_move = self.me['last_move']
+            last_move = self.me['last_move'] or 'n'
 
             if self.next_space_wall(last_move):
                 return self.new_wall_direction(last_move)
