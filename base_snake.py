@@ -66,6 +66,28 @@ class Snake():
     def get_taunt(self):
         return ''
 
+    def compute_move(self, move):
+        x,y = self.get_head()
+
+        if move == 'n':
+            y = y - 1
+        elif move == 'e':
+            x = x + 1
+        elif move == 's':
+            y = y + 1
+        else:
+            x = x - 1
+
+        return x,y
+
+    def bad_move(self, move):
+        new_x, new_y = self.compute_move(move)
+
+        for pos in self.me['queue']:
+            if x == pos[0] and y == pos[1]:
+                return True
+        return False
+
     def move_to(self, a, b):
         x,y = self.get_head()
 

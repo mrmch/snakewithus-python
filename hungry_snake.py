@@ -50,6 +50,9 @@ class HungrySnake(Snake):
             (move == 'e' and last_move == 'w'):
             move = 'w'
 
+        if self.bad_move(move):
+            move = 's'
+
         return move
 
     def get_taunt(self):
