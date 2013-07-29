@@ -52,7 +52,7 @@ class HungrySnake(Snake):
 
         return move
 
-    def taunt(self):
+    def get_taunt(self):
         taunts = [
             'Nom nom nom',
             'Yum!',
