@@ -40,10 +40,11 @@ class TauntSnake(Snake):
             '%s your snake is weak.',
             '%s: brought to you by CrowdContent.com',
             "I'm the best snake, %s is definitely the worst",
-            "Pssst %s, your epidermis is showing!",
-            '','','','','','','','','','','','','',''
+            "Pssst %s, your epidermis is showing!"
         ]
 
-        taunt = random.choice(taunts)
+        taunt = ''
+        if random.randint(0, 10) == 0:
+            taunt = random.choice(taunts)
 
         return taunt % snake_name
